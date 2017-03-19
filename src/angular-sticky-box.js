@@ -6,10 +6,6 @@ angular.module('angular-sticky-box', []).directive('stickyBox', ['$timeout', fun
 	function setup(scope, el) {
 		scope.innerHeight = el.children[0].offsetHeight;
 
-		if (scope.innerHeight >= el.offsetHeight) {
-			scope.enabled = false;
-			return;
-		}
 		scope.enabled = true;
 
 		var parent = el;

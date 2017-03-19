@@ -1,7 +1,7 @@
 /*!
  * angular-sticky-box
  * https://github.com/pcassis/angular-sticky-box
- * Version: 0.0.2 - 2017-03-14T22:30:50.556Z
+ * Version: 0.0.2 - 2017-03-19T17:33:59.673Z
  * License: MIT
  */
 
@@ -14,10 +14,6 @@ angular.module('angular-sticky-box', []).directive('stickyBox', ['$timeout', fun
 	function setup(scope, el) {
 		scope.innerHeight = el.children[0].offsetHeight;
 
-		if (scope.innerHeight >= el.offsetHeight) {
-			scope.enabled = false;
-			return;
-		}
 		scope.enabled = true;
 
 		var parent = el;
